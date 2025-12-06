@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@specifyapp/cli": "^1.2.0",
+    "@specifyapp/sdk": "^1.2.1"
+  }
+}
