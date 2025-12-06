@@ -23,6 +23,16 @@ The field of Physical AI is rapidly evolving, bridging the gap between digital i
 
 ---
 
+## Clarifications
+
+### Session 2025-12-06
+
+- Q: What specific task should the capstone project demonstrate? → A: Fetch and deliver object based on voice command (e.g., "bring me the red cup from the kitchen")
+- Q: How many diagrams should the book target? → A: 1-2 diagrams per chapter (~30-40 total)
+- Q: How long should a typical chapter take to complete (reading + exercises)? → A: 1-2 hours per chapter
+
+---
+
 ## User Scenarios & Testing
 
 ### Primary User Flows
@@ -89,7 +99,7 @@ The field of Physical AI is rapidly evolving, bridging the gap between digital i
    - REQ-2.2: Module 2 covers simulation environments (Gazebo physics/sensors, Unity integration, ROS controllers)
    - REQ-2.3: Module 3 covers NVIDIA Isaac platform (Isaac Sim, Isaac ROS, VSLAM, Nav2, reinforcement learning, sim-to-real transfer)
    - REQ-2.4: Module 4 covers Vision-Language-Action integration (Whisper voice-to-action, LLM cognitive planning, multi-modal interaction)
-   - REQ-2.5: Capstone project demonstrates autonomous humanoid robot executing natural language commands
+   - REQ-2.5: Capstone project demonstrates autonomous humanoid robot fetching and delivering objects based on voice commands (e.g., "bring me the red cup from the kitchen")
 
 3. **Academic Rigor & Citations**
    - REQ-3.1: All factual claims are supported by citations
@@ -99,7 +109,7 @@ The field of Physical AI is rapidly evolving, bridging the gap between digital i
    - REQ-3.5: Content is original and verifiably plagiarism-free
 
 4. **Visual & Diagrammatic Support**
-   - REQ-4.1: Technical concepts are illustrated with diagrams
+   - REQ-4.1: Technical concepts are illustrated with diagrams (target: 1-2 diagrams per chapter, approximately 30-40 diagrams total)
    - REQ-4.2: System architecture diagrams show component relationships
    - REQ-4.3: All diagrams are generated using SpeckitPlus for consistency and maintainability
    - REQ-4.4: Code examples include syntax highlighting and explanatory comments
@@ -143,10 +153,10 @@ The field of Physical AI is rapidly evolving, bridging the gap between digital i
 - [ ] Each technology includes troubleshooting guidance
 
 **For REQ-2.5 (Capstone Project):**
-- [ ] Capstone project requirements are clearly specified
-- [ ] Capstone integrates components from all 4 modules
+- [ ] Capstone project requirements are clearly specified (fetch and deliver task)
+- [ ] Capstone integrates components from all 4 modules (ROS control, simulation environment, Isaac navigation/perception, VLA for voice understanding)
 - [ ] Capstone includes step-by-step implementation guide
-- [ ] Capstone demonstrates humanoid responding to voice commands and executing tasks
+- [ ] Capstone demonstrates humanoid successfully fetching specified object and delivering it to requested location based on natural language voice commands
 
 **For REQ-3.1-3.5 (Academic Rigor):**
 - [ ] Every factual claim has bracketed citation (e.g., [Smith, 2024])
@@ -155,7 +165,8 @@ The field of Physical AI is rapidly evolving, bridging the gap between digital i
 - [ ] Plagiarism check returns 0% similarity to existing sources (excluding quotes)
 
 **For REQ-4.1-4.4 (Visual Support):**
-- [ ] Each technical concept has accompanying diagram
+- [ ] Book contains 30-40 diagrams (approximately 1-2 per chapter)
+- [ ] Each major technical concept has accompanying diagram
 - [ ] Architecture diagrams use consistent notation
 - [ ] All diagrams are generated with SpeckitPlus and source files are included
 - [ ] Code examples include inline comments explaining key lines
@@ -180,8 +191,8 @@ The field of Physical AI is rapidly evolving, bridging the gap between digital i
 ### Measurable Outcomes
 
 1. **Learning Effectiveness**
-   - Readers can complete capstone project (autonomous humanoid with voice interaction) within 13-week timeline
-   - 90%+ of hands-on exercises include verifiable success criteria (e.g., "robot reaches target location")
+   - Readers can complete capstone project (humanoid fetching and delivering objects via voice commands) within 13-week timeline
+   - 90%+ of hands-on exercises include verifiable success criteria (e.g., "robot reaches target location", "object grasped successfully")
    - Each module assessment (if implemented by instructor) shows progressive skill building
 
 2. **Content Quality**
@@ -218,7 +229,7 @@ The field of Physical AI is rapidly evolving, bridging the gap between digital i
 
 **Chapter**
 - Description: Self-contained unit of learning covering specific topic or skill
-- Key attributes: Learning objectives, conceptual content, code examples, exercises, estimated completion time
+- Key attributes: Learning objectives, conceptual content, code examples, exercises, estimated completion time (1-2 hours including reading and exercises)
 - Relationships: Belongs to one Module, may reference other Chapters, includes multiple Code Examples and Diagrams
 
 **Module**
@@ -274,7 +285,7 @@ The field of Physical AI is rapidly evolving, bridging the gap between digital i
 ### Assumptions
 - **Target audience**: Primarily graduate students and professionals with technical background, not general public
 - **Learning environment**: Readers have access to Linux system (native or WSL) for ROS 2 development, and computer with sufficient resources for simulation (8GB+ RAM, discrete GPU recommended)
-- **Time commitment**: 13-week timeline assumes 8-10 hours per week of study and practice
+- **Time commitment**: 13-week timeline assumes 8-10 hours per week of study and practice (approximately 2-5 hours for chapter reading, 3-5 hours for hands-on exercises and capstone development)
 - **Pedagogical approach**: Hands-on, project-based learning is more effective than pure lecture for robotics education
 - **Technology stability**: Core technologies (ROS 2, Isaac) are mature enough that examples won't become immediately obsolete
 - **Open source preference**: Where possible, open-source tools and frameworks are preferred over proprietary solutions
@@ -354,6 +365,6 @@ The field of Physical AI is rapidly evolving, bridging the gap between digital i
 
 - **SpeckitPlus Integration**: Investigate SpeckitPlus capabilities early in project to understand diagramming constraints
 - **Tool Versioning Strategy**: Decide on approach for handling rapid tool evolution (version-specific vs. conceptual focus)
-- **Capstone Project Scope**: Finalize specific capabilities for capstone humanoid (e.g., "fetch object from shelf based on voice command")
+- **Capstone Project Implementation**: The fetch-and-deliver task requires integration of navigation (Isaac Nav2), object detection/recognition (vision), manipulation (grasping), and voice command parsing (Whisper + LLM). Implementation guide should break this into incremental milestones.
 - **Instructor Resources**: Consider companion instructor's guide with lecture slides, assessment rubrics, and project grading criteria (may be future enhancement)
 - **Community Engagement**: Consider creating GitHub repository for code examples and community contributions/errata
