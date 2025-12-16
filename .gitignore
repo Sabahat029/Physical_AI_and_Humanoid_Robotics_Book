@@ -1,0 +1,6 @@
+node_modules/
+memory/
+.cache/
+.claude/
+.qwen/
+.env

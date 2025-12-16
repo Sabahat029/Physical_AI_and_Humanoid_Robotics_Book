@@ -1,0 +1,7 @@
+#!/home/sabahat_aslam29/projects/Physical_AI_and_Humanoid_Robotics_Book/my-docs/.venv/bin/python3
+import sys
+from typer.cli import main
+if __name__ == '__main__':
+    if sys.argv[0].endswith('.exe'):
+        sys.argv[0] = sys.argv[0][:-4]
+    sys.exit(main())
