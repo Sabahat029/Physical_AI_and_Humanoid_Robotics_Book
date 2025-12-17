@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-appendix/subagents-definition" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Subagent Definition | Physical AI and Humanoid Robotics</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://Sabahat029.github.io/Physical_AI_and_Humanoid_Robotics_Book/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://Sabahat029.github.io/Physical_AI_and_Humanoid_Robotics_Book/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://Sabahat029.github.io/Physical_AI_and_Humanoid_Robotics_Book/docs/appendix/subagents-definition"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Subagent Definition | Physical AI and Humanoid Robotics"><meta data-rh="true" name="description" content="Date: December 15, 2025"><meta data-rh="true" property="og:description" content="Date: December 15, 2025"><link data-rh="true" rel="icon" href="/Physical_AI_and_Humanoid_Robotics_Book/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://Sabahat029.github.io/Physical_AI_and_Humanoid_Robotics_Book/docs/appendix/subagents-definition"><link data-rh="true" rel="alternate" href="https://Sabahat029.github.io/Physical_AI_and_Humanoid_Robotics_Book/docs/appendix/subagents-definition" hreflang="en"><link data-rh="true" rel="alternate" href="https://Sabahat029.github.io/Physical_AI_and_Humanoid_Robotics_Book/docs/appendix/subagents-definition" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Subagent Definition","item":"https://Sabahat029.github.io/Physical_AI_and_Humanoid_Robotics_Book/docs/appendix/subagents-definition"}]}</script><link rel="alternate" type="application/rss+xml" href="/Physical_AI_and_Humanoid_Robotics_Book/blog/rss.xml" title="Physical AI and Humanoid Robotics RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/Physical_AI_and_Humanoid_Robotics_Book/blog/atom.xml" title="Physical AI and Humanoid Robotics Atom Feed"><link rel="stylesheet" href="/Physical_AI_and_Humanoid_Robotics_Book/assets/css/styles.761b036b.css">
+<script src="/Physical_AI_and_Humanoid_Robotics_Book/assets/js/runtime~main.fcee6aeb.js" defer="defer"></script>
+<script src="/Physical_AI_and_Humanoid_Robotics_Book/assets/js/main.f21e0e13.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/Physical_AI_and_Humanoid_Robotics_Book/img/logo.svg"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/Physical_AI_and_Humanoid_Robotics_Book/"><div class="navbar__logo"><img src="/Physical_AI_and_Humanoid_Robotics_Book/img/logo.svg" alt="Book Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/Physical_AI_and_Humanoid_Robotics_Book/img/logo.svg" alt="Book Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Physical AI Book</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/Physical_AI_and_Humanoid_Robotics_Book/docs/introduction/ch01-physical-ai-foundations">Book</a><a class="navbar__item navbar__link" href="/Physical_AI_and_Humanoid_Robotics_Book/blog">Blog</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/Sabahat029/Physical_AI_and_Humanoid_Robotics_Book" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/Physical_AI_and_Humanoid_Robotics_Book/docs/introduction/ch01-physical-ai-foundations"><span title="introduction" class="categoryLinkLabel_W154">introduction</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/Physical_AI_and_Humanoid_Robotics_Book/docs/introduction/authoritative-sources"><span title="introduction" class="categoryLinkLabel_W154">introduction</span></a></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/Physical_AI_and_Humanoid_Robotics_Book/docs/intro"><span title="Tutorial Intro" class="linkLabel_WmDU">Tutorial Intro</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/Physical_AI_and_Humanoid_Robotics_Book/docs/robotic-nervous-system/ch03-ros2-architecture"><span title="robotic-nervous-system" class="categoryLinkLabel_W154">robotic-nervous-system</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/Physical_AI_and_Humanoid_Robotics_Book/docs/robotic-nervous-system/chapter-4-6-key-points"><span title="robotic-nervous-system" class="categoryLinkLabel_W154">robotic-nervous-system</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/Physical_AI_and_Humanoid_Robotics_Book/docs/digital-twin-environments/ch06-gazebo-simulation-setup"><span title="digital-twin-environments" class="categoryLinkLabel_W154">digital-twin-environments</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/Physical_AI_and_Humanoid_Robotics_Book/docs/digital-twin/chapter-7-10-key-points"><span title="digital-twin" class="categoryLinkLabel_W154">digital-twin</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/Physical_AI_and_Humanoid_Robotics_Book/docs/vision-language-action/ch10-voice-to-action-integration"><span title="vision-language-action" class="categoryLinkLabel_W154">vision-language-action</span></a></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/Physical_AI_and_Humanoid_Robotics_Book/docs/GEMINI"><span title="Gemini CLI Rules" class="linkLabel_WmDU">Gemini CLI Rules</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/Physical_AI_and_Humanoid_Robotics_Book/docs"><span title="Website" class="linkLabel_WmDU">Website</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/Physical_AI_and_Humanoid_Robotics_Book/docs/appendix/agent-architecture-diagrams"><span title="appendix" class="categoryLinkLabel_W154">appendix</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/Physical_AI_and_Humanoid_Robotics_Book/docs/appendix/agent-architecture-diagrams"><span title="Agent Architecture Diagrams" class="linkLabel_WmDU">Agent Architecture Diagrams</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/Physical_AI_and_Humanoid_Robotics_Book/docs/appendix/chapter-mapping"><span title="Skills/Subagents/Tools to Chapters Mapping" class="linkLabel_WmDU">Skills/Subagents/Tools to Chapters Mapping</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/Physical_AI_and_Humanoid_Robotics_Book/docs/appendix/reusable-skills"><span title="Reusable Skills Identification" class="linkLabel_WmDU">Reusable Skills Identification</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/Physical_AI_and_Humanoid_Robotics_Book/docs/appendix/subagents-definition"><span title="Subagent Definition" class="linkLabel_WmDU">Subagent Definition</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/Physical_AI_and_Humanoid_Robotics_Book/docs/appendix/tools-specification"><span title="Tool Specification" class="linkLabel_WmDU">Tool Specification</span></a></li></ul></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/Physical_AI_and_Humanoid_Robotics_Book/docs/research-organization"><span title="Research Organization by Chapter &amp; Section" class="linkLabel_WmDU">Research Organization by Chapter &amp; Section</span></a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/Physical_AI_and_Humanoid_Robotics_Book/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">appendix</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Subagent Definition</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Subagent Definition</h1></header>
+<p><strong>Date</strong>: December 15, 2025<br>
+<strong>Module</strong>: Technical Structuring &amp; Intelligence Components<br>
+<strong>Task</strong>: Task 3.2 - Define Subagents (depends on Task 3.1)<br>
+<strong>Status</strong>: In Progress</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="overview-of-subagents">Overview of Subagents<a href="#overview-of-subagents" class="hash-link" aria-label="Direct link to Overview of Subagents" title="Direct link to Overview of Subagents" translate="no">​</a></h2>
+<p>Subagents are multi-step workflows that coordinate multiple reusable skills to accomplish complex tasks. Unlike atomic skills, subagents maintain internal state and decision-making capabilities across multiple skill invocations. In the Physical AI and Humanoid Robotics context, subagents represent coordinated behaviors that span multiple chapters and modules.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="core-system-subagents">Core System Subagents<a href="#core-system-subagents" class="hash-link" aria-label="Direct link to Core System Subagents" title="Direct link to Core System Subagents" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-perception-agent">1. Perception Agent<a href="#1-perception-agent" class="hash-link" aria-label="Direct link to 1. Perception Agent" title="Direct link to 1. Perception Agent" translate="no">​</a></h3>
+<p><strong>Description</strong>: Manages all sensory processing and environment understanding
+<strong>Inputs</strong>: Raw sensor data streams, task requirements
+<strong>Outputs</strong>: Processed perception results, environmental models
+<strong>State</strong>: Maintains environmental model, sensor calibration status
+<strong>Complexity</strong>: High - integrates multiple perception skills</p>
+<p><strong>Skills Orchestrated</strong>:</p>
+<ul>
+<li class="">Sensor Simulator (for testing)</li>
+<li class="">Object Detector</li>
+<li class="">SLAM Mapper</li>
+<li class="">State Estimator</li>
+<li class="">Performance Monitor</li>
+</ul>
+<p><strong>Workflow</strong>:</p>
+<ol>
+<li class="">Initialize sensor interfaces and calibration</li>
+<li class="">Continuously process incoming sensor data</li>
+<li class="">Detect and track objects of interest</li>
+<li class="">Update environmental map and localization</li>
+<li class="">Assess perception quality and adjust parameters</li>
+<li class="">Report perception results to higher-level agents</li>
+</ol>
+<p><strong>Applications</strong>:</p>
+<ul>
+<li class="">Chapter 2: Multi-sensor integration</li>
+<li class="">Chapter 9: VSLAM implementation</li>
+<li class="">Chapter 7: Unity perception simulation</li>
+<li class="">Chapter 8: Isaac Sim perception validation</li>
+</ul>
+<p><strong>Technical Requirements</strong>:</p>
+<ul>
+<li class="">Real-time processing of multiple sensor streams</li>
+<li class="">Concurrent object detection and mapping</li>
+<li class="">Adaptive parameter tuning</li>
+<li class="">Fault tolerance for sensor failures</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-control-agent">2. Control Agent<a href="#2-control-agent" class="hash-link" aria-label="Direct link to 2. Control Agent" title="Direct link to 2. Control Agent" translate="no">​</a></h3>
+<p><strong>Description</strong>: Manages robot motion and actuation based on higher-level goals
+<strong>Inputs</strong>: Motion goals, environmental state, robot state
+<strong>Outputs</strong>: Actuator commands, motion status
+<strong>State</strong>: Maintains motion plan, robot state, trajectory progress
+<strong>Complexity</strong>: High - real-time motion coordination</p>
+<p><strong>Skills Orchestrated</strong>:</p>
+<ul>
+<li class="">Inverse Kinematics Solver</li>
+<li class="">Trajectory Generator</li>
+<li class="">State Estimator</li>
+<li class="">Balance Controller</li>
+<li class="">Motion Planner</li>
+</ul>
+<p><strong>Workflow</strong>:</p>
+<ol>
+<li class="">Receive high-level motion goal</li>
+<li class="">Plan trajectory considering constraints</li>
+<li class="">Generate low-level actuator commands</li>
+<li class="">Monitor execution and adjust as needed</li>
+<li class="">Maintain balance during motion</li>
+<li class="">Report execution status</li>
+</ol>
+<p><strong>Applications</strong>:</p>
+<ul>
+<li class="">Chapter 5: Basic robot control</li>
+<li class="">Chapter 6: Simulation-based control</li>
+<li class="">Chapter 10: Navigation with control</li>
+<li class="">Module 4: Complex movement sequences</li>
+</ul>
+<p><strong>Technical Requirements</strong>:</p>
+<ul>
+<li class="">Real-time motion execution (1000Hz+)</li>
+<li class="">Smooth trajectory following</li>
+<li class="">Integration with balance control</li>
+<li class="">Graceful handling of execution errors</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-learning-agent">3. Learning Agent<a href="#3-learning-agent" class="hash-link" aria-label="Direct link to 3. Learning Agent" title="Direct link to 3. Learning Agent" translate="no">​</a></h3>
+<p><strong>Description</strong>: Enables adaptive behavior through various learning mechanisms
+<strong>Inputs</strong>: Environmental feedback, reward signals, training goals
+<strong>Outputs</strong>: Updated behavior policies, learned models
+<strong>State</strong>: Maintains learned models, performance metrics, training progress
+<strong>Complexity</strong>: High - complex learning algorithms</p>
+<p><strong>Skills Orchestrated</strong>:</p>
+<ul>
+<li class="">Reinforcement Learning Trainer</li>
+<li class="">State Estimator</li>
+<li class="">Performance Monitor</li>
+<li class="">Parameter Manager</li>
+<li class="">Safety Validator</li>
+</ul>
+<p><strong>Workflow</strong>:</p>
+<ol>
+<li class="">Define learning objectives and environment</li>
+<li class="">Collect training data through interaction</li>
+<li class="">Update behavior policies based on feedback</li>
+<li class="">Validate learned behaviors in safe scenarios</li>
+<li class="">Monitor learning progress and adjust strategies</li>
+<li class="">Deploy learned behaviors when validated</li>
+</ol>
+<p><strong>Applications</strong>:</p>
+<ul>
+<li class="">Chapter 4: AI agent implementation</li>
+<li class="">Chapter 6: Simulation-based learning</li>
+<li class="">Chapter 7: Unity-based training</li>
+<li class="">Module 4: Adaptive behavior development</li>
+</ul>
+<p><strong>Technical Requirements</strong>:</p>
+<ul>
+<li class="">Safe exploration strategies</li>
+<li class="">Multiple learning algorithm support</li>
+<li class="">Real-time learning capabilities</li>
+<li class="">Performance validation protocols</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="navigation-and-mobility-subagents">Navigation and Mobility Subagents<a href="#navigation-and-mobility-subagents" class="hash-link" aria-label="Direct link to Navigation and Mobility Subagents" title="Direct link to Navigation and Mobility Subagents" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="4-navigation-subagent">4. Navigation Subagent<a href="#4-navigation-subagent" class="hash-link" aria-label="Direct link to 4. Navigation Subagent" title="Direct link to 4. Navigation Subagent" translate="no">​</a></h3>
+<p><strong>Description</strong>: Plans and executes robot navigation in complex environments
+<strong>Inputs</strong>: Goal location, environmental maps, current state
+<strong>Outputs</strong>: Navigation actions, path following commands
+<strong>State</strong>: Current path plan, navigation status, obstacle information
+<strong>Complexity</strong>: High - path planning and execution</p>
+<p><strong>Skills Orchestrated</strong>:</p>
+<ul>
+<li class="">Motion Planner</li>
+<li class="">SLAM Mapper</li>
+<li class="">State Estimator</li>
+<li class="">Object Detector</li>
+<li class="">Trajectory Generator</li>
+</ul>
+<p><strong>Workflow</strong>:</p>
+<ol>
+<li class="">Receive navigation goal and constraints</li>
+<li class="">Plan optimal path to goal</li>
+<li class="">Execute path following with obstacle avoidance</li>
+<li class="">Update path as environment changes</li>
+<li class="">Detect and handle navigation failures</li>
+<li class="">Report navigation completion status</li>
+</ol>
+<p><strong>Applications</strong>:</p>
+<ul>
+<li class="">Chapter 10: Nav2-based navigation</li>
+<li class="">Chapter 8: Isaac navigation</li>
+<li class="">Module 4: Complex navigation tasks</li>
+<li class="">Capstone: Autonomous navigation</li>
+</ul>
+<p><strong>Technical Requirements</strong>:</p>
+<ul>
+<li class="">Real-time path replanning</li>
+<li class="">Dynamic obstacle avoidance</li>
+<li class="">Multi-modal path planning</li>
+<li class="">Recovery behavior integration</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="5-manipulation-subagent">5. Manipulation Subagent<a href="#5-manipulation-subagent" class="hash-link" aria-label="Direct link to 5. Manipulation Subagent" title="Direct link to 5. Manipulation Subagent" translate="no">​</a></h3>
+<p><strong>Description</strong>: Plans and executes robot manipulation tasks
+<strong>Inputs</strong>: Manipulation goal, object information, robot state
+<strong>Outputs</strong>: Manipulation actions, grasp commands
+<strong>State</strong>: Manipulation plan, grasp success status, object tracking
+<strong>Complexity</strong>: High - complex manipulation planning</p>
+<p><strong>Skills Orchestrated</strong>:</p>
+<ul>
+<li class="">Inverse Kinematics Solver</li>
+<li class="">Motion Planner</li>
+<li class="">Object Detector</li>
+<li class="">Trajectory Generator</li>
+<li class="">State Estimator</li>
+</ul>
+<p><strong>Workflow</strong>:</p>
+<ol>
+<li class="">Analyze manipulation goal and object properties</li>
+<li class="">Plan approach and grasp strategy</li>
+<li class="">Execute grasp with precision control</li>
+<li class="">Manipulate object as required</li>
+<li class="">Place or release object appropriately</li>
+<li class="">Verify manipulation success</li>
+</ol>
+<p><strong>Applications</strong>:</p>
+<ul>
+<li class="">Chapter 5: Basic manipulation</li>
+<li class="">Chapter 9: Vision-guided manipulation</li>
+<li class="">Chapter 8: Isaac manipulation</li>
+<li class="">Module 4: Complex manipulation tasks</li>
+</ul>
+<p><strong>Technical Requirements</strong>:</p>
+<ul>
+<li class="">Precision control capabilities</li>
+<li class="">Visual servoing integration</li>
+<li class="">Grasp planning algorithms</li>
+<li class="">Force control integration</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="human-robot-interaction-subagents">Human-Robot Interaction Subagents<a href="#human-robot-interaction-subagents" class="hash-link" aria-label="Direct link to Human-Robot Interaction Subagents" title="Direct link to Human-Robot Interaction Subagents" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="6-voice-command-subagent">6. Voice Command Subagent<a href="#6-voice-command-subagent" class="hash-link" aria-label="Direct link to 6. Voice Command Subagent" title="Direct link to 6. Voice Command Subagent" translate="no">​</a></h3>
+<p><strong>Description</strong>: Processes voice commands and translates to robot actions
+<strong>Inputs</strong>: Audio input, command vocabulary, robot capabilities
+<strong>Outputs</strong>: Robot actions, verbal feedback
+<strong>State</strong>: Command context, interaction history, speech recognition state
+<strong>Complexity</strong>: Medium-High - speech processing and action translation</p>
+<p><strong>Skills Orchestrated</strong>:</p>
+<ul>
+<li class="">Voice Recognition Processor</li>
+<li class="">Message Router</li>
+<li class="">Parameter Manager</li>
+<li class="">State Estimator</li>
+<li class="">Performance Monitor</li>
+</ul>
+<p><strong>Workflow</strong>:</p>
+<ol>
+<li class="">Capture and preprocess audio input</li>
+<li class="">Recognize spoken commands</li>
+<li class="">Parse command intent and parameters</li>
+<li class="">Translate to robot action sequence</li>
+<li class="">Execute action sequence</li>
+<li class="">Provide verbal feedback</li>
+</ol>
+<p><strong>Applications</strong>:</p>
+<ul>
+<li class="">Module 4: Voice-to-action implementation</li>
+<li class="">Chapter 10: Voice-enabled navigation</li>
+<li class="">Capstone: Full voice control</li>
+<li class="">Appendix: Voice interface enhancement</li>
+</ul>
+<p><strong>Technical Requirements</strong>:</p>
+<ul>
+<li class="">Real-time speech processing</li>
+<li class="">Natural language understanding</li>
+<li class="">Context-aware command interpretation</li>
+<li class="">Multi-language support</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="7-social-interaction-subagent">7. Social Interaction Subagent<a href="#7-social-interaction-subagent" class="hash-link" aria-label="Direct link to 7. Social Interaction Subagent" title="Direct link to 7. Social Interaction Subagent" translate="no">​</a></h3>
+<p><strong>Description</strong>: Manages social behaviors for human-robot interaction
+<strong>Inputs</strong>: Human behavior cues, interaction context, social rules
+<strong>Outputs</strong>: Social behaviors, engagement actions
+<strong>State</strong>: Social context, interaction history, engagement level
+<strong>Complexity</strong>: High - complex social behavior modeling</p>
+<p><strong>Skills Orchestrated</strong>:</p>
+<ul>
+<li class="">Object Detector (for human detection)</li>
+<li class="">State Estimator (for tracking)</li>
+<li class="">Message Router (for coordination)</li>
+<li class="">Performance Monitor (for engagement)</li>
+<li class="">Parameter Manager (for behavior tuning)</li>
+</ul>
+<p><strong>Workflow</strong>:</p>
+<ol>
+<li class="">Detect and track nearby humans</li>
+<li class="">Analyze human behavior and intent</li>
+<li class="">Select appropriate social responses</li>
+<li class="">Execute social behaviors</li>
+<li class="">Monitor interaction quality</li>
+<li class="">Adjust behavior based on feedback</li>
+</ol>
+<p><strong>Applications</strong>:</p>
+<ul>
+<li class="">Module 4: Social robotics implementation</li>
+<li class="">Chapter 8: Isaac social interaction</li>
+<li class="">Capstone: Socially-aware humanoid</li>
+<li class="">Appendix: Advanced HRI techniques</li>
+</ul>
+<p><strong>Technical Requirements</strong>:</p>
+<ul>
+<li class="">Real-time human tracking</li>
+<li class="">Social behavior libraries</li>
+<li class="">Engagement quality assessment</li>
+<li class="">Cultural adaptation capabilities</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="system-management-subagents">System Management Subagents<a href="#system-management-subagents" class="hash-link" aria-label="Direct link to System Management Subagents" title="Direct link to System Management Subagents" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="8-simulation-coordinator-subagent">8. Simulation Coordinator Subagent<a href="#8-simulation-coordinator-subagent" class="hash-link" aria-label="Direct link to 8. Simulation Coordinator Subagent" title="Direct link to 8. Simulation Coordinator Subagent" translate="no">​</a></h3>
+<p><strong>Description</strong>: Manages simulation environments and validates real-world transfer
+<strong>Inputs</strong>: Simulation parameters, real-world data, validation goals
+<strong>Outputs</strong>: Simulation results, transfer assessment
+<strong>State</strong>: Simulation environment, validation metrics, transfer readiness
+<strong>Complexity</strong>: High - complex simulation management</p>
+<p><strong>Skills Orchestrated</strong>:</p>
+<ul>
+<li class="">Sensor Simulator</li>
+<li class="">Performance Monitor</li>
+<li class="">Parameter Manager</li>
+<li class="">Message Router</li>
+<li class="">State Estimator</li>
+</ul>
+<p><strong>Workflow</strong>:</p>
+<ol>
+<li class="">Configure simulation environment</li>
+<li class="">Coordinate simulated robot behavior</li>
+<li class="">Collect performance metrics</li>
+<li class="">Compare with real-world baselines</li>
+<li class="">Adjust simulation parameters for realism</li>
+<li class="">Generate transfer readiness assessment</li>
+</ol>
+<p><strong>Applications</strong>:</p>
+<ul>
+<li class="">Chapter 6: Gazebo simulation management</li>
+<li class="">Chapter 7: Unity simulation coordination</li>
+<li class="">Chapter 8: Isaac Sim management</li>
+<li class="">All modules: Simulation validation</li>
+</ul>
+<p><strong>Technical Requirements</strong>:</p>
+<ul>
+<li class="">Multi-platform simulation support</li>
+<li class="">Performance benchmarking</li>
+<li class="">Domain randomization</li>
+<li class="">Transfer validation protocols</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="9-system-diagnostics-subagent">9. System Diagnostics Subagent<a href="#9-system-diagnostics-subagent" class="hash-link" aria-label="Direct link to 9. System Diagnostics Subagent" title="Direct link to 9. System Diagnostics Subagent" translate="no">​</a></h3>
+<p><strong>Description</strong>: Monitors and diagnoses system health across all components
+<strong>Inputs</strong>: System metrics, error logs, performance data
+<strong>Outputs</strong>: Health reports, diagnostic recommendations
+<strong>State</strong>: System health status, diagnostic history, maintenance schedule
+<strong>Complexity</strong>: Medium - system-wide monitoring</p>
+<p><strong>Skills Orchestrated</strong>:</p>
+<ul>
+<li class="">Performance Monitor</li>
+<li class="">Parameter Manager</li>
+<li class="">Message Router</li>
+<li class="">State Estimator</li>
+<li class="">Safety Validator</li>
+</ul>
+<p><strong>Workflow</strong>:</p>
+<ol>
+<li class="">Collect system metrics from all components</li>
+<li class="">Analyze performance and error patterns</li>
+<li class="">Identify potential issues and bottlenecks</li>
+<li class="">Generate diagnostic reports</li>
+<li class="">Recommend maintenance actions</li>
+<li class="">Schedule preventive measures</li>
+</ol>
+<p><strong>Applications</strong>:</p>
+<ul>
+<li class="">Chapter 3: ROS 2 system health</li>
+<li class="">Chapter 4: AI agent monitoring</li>
+<li class="">Chapter 9: Perception system diagnostics</li>
+<li class="">All modules: System health monitoring</li>
+</ul>
+<p><strong>Technical Requirements</strong>:</p>
+<ul>
+<li class="">Comprehensive metric collection</li>
+<li class="">Anomaly detection algorithms</li>
+<li class="">Predictive maintenance capabilities</li>
+<li class="">Automated reporting</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="10-safety-management-subagent">10. Safety Management Subagent<a href="#10-safety-management-subagent" class="hash-link" aria-label="Direct link to 10. Safety Management Subagent" title="Direct link to 10. Safety Management Subagent" translate="no">​</a></h3>
+<p><strong>Description</strong>: Ensures safe operation across all robot behaviors
+<strong>Inputs</strong>: System states, environmental conditions, safety constraints
+<strong>Outputs</strong>: Safety controls, emergency responses
+<strong>State</strong>: Safety status, risk assessment, emergency procedures
+<strong>Complexity</strong>: Critical - safety-critical operation</p>
+<p><strong>Skills Orchestrated</strong>:</p>
+<ul>
+<li class="">State Estimator</li>
+<li class="">Safety Validator</li>
+<li class="">Performance Monitor</li>
+<li class="">Message Router</li>
+<li class="">Parameter Manager</li>
+</ul>
+<p><strong>Workflow</strong>:</p>
+<ol>
+<li class="">Continuously monitor system and environment state</li>
+<li class="">Assess potential safety risks</li>
+<li class="">Apply safety constraints to planned actions</li>
+<li class="">Execute emergency procedures when needed</li>
+<li class="">Log safety events for analysis</li>
+<li class="">Update safety models based on experience</li>
+</ol>
+<p><strong>Applications</strong>:</p>
+<ul>
+<li class="">All chapters: Safety integration</li>
+<li class="">Chapter 5: Humanoid safety</li>
+<li class="">Module 4: Social interaction safety</li>
+<li class="">Capstone: Comprehensive safety system</li>
+</ul>
+<p><strong>Technical Requirements</strong>:</p>
+<ul>
+<li class="">Real-time safety monitoring</li>
+<li class="">Multiple safety constraint types</li>
+<li class="">Fail-safe mechanisms</li>
+<li class="">Safety certification compliance</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="subagent-communication-architecture">Subagent Communication Architecture<a href="#subagent-communication-architecture" class="hash-link" aria-label="Direct link to Subagent Communication Architecture" title="Direct link to Subagent Communication Architecture" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="hierarchical-communication-pattern">Hierarchical Communication Pattern<a href="#hierarchical-communication-pattern" class="hash-link" aria-label="Direct link to Hierarchical Communication Pattern" title="Direct link to Hierarchical Communication Pattern" translate="no">​</a></h3>
+<ul>
+<li class="">Top-level agents coordinate subagents</li>
+<li class="">Subagents coordinate skills</li>
+<li class="">Skills interact with hardware/direct ROS interfaces</li>
+<li class="">Communication via standardized ROS 2 messages</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="state-synchronization">State Synchronization<a href="#state-synchronization" class="hash-link" aria-label="Direct link to State Synchronization" title="Direct link to State Synchronization" translate="no">​</a></h3>
+<ul>
+<li class="">Shared state management across related subagents</li>
+<li class="">Event-driven state updates</li>
+<li class="">Conflict resolution mechanisms</li>
+<li class="">Consistent state snapshots</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="resource-management">Resource Management<a href="#resource-management" class="hash-link" aria-label="Direct link to Resource Management" title="Direct link to Resource Management" translate="no">​</a></h3>
+<ul>
+<li class="">Resource allocation and deallocation</li>
+<li class="">Priority-based resource access</li>
+<li class="">Deadlock prevention</li>
+<li class="">Performance optimization</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="subagent-lifecycle-management">Subagent Lifecycle Management<a href="#subagent-lifecycle-management" class="hash-link" aria-label="Direct link to Subagent Lifecycle Management" title="Direct link to Subagent Lifecycle Management" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="initialization">Initialization<a href="#initialization" class="hash-link" aria-label="Direct link to Initialization" title="Direct link to Initialization" translate="no">​</a></h3>
+<ul>
+<li class="">Skill dependency resolution</li>
+<li class="">Parameter configuration</li>
+<li class="">State initialization</li>
+<li class="">Communication setup</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="execution">Execution<a href="#execution" class="hash-link" aria-label="Direct link to Execution" title="Direct link to Execution" translate="no">​</a></h3>
+<ul>
+<li class="">Input processing and validation</li>
+<li class="">Skill orchestration</li>
+<li class="">State management</li>
+<li class="">Output generation</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="monitoring">Monitoring<a href="#monitoring" class="hash-link" aria-label="Direct link to Monitoring" title="Direct link to Monitoring" translate="no">​</a></h3>
+<ul>
+<li class="">Performance tracking</li>
+<li class="">Health assessment</li>
+<li class="">Error handling</li>
+<li class="">Adaptation to conditions</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="shutdown">Shutdown<a href="#shutdown" class="hash-link" aria-label="Direct link to Shutdown" title="Direct link to Shutdown" translate="no">​</a></h3>
+<ul>
+<li class="">Graceful skill termination</li>
+<li class="">State saving</li>
+<li class="">Resource cleanup</li>
+<li class="">Performance logging</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="integration-with-learning-agents">Integration with Learning Agents<a href="#integration-with-learning-agents" class="hash-link" aria-label="Direct link to Integration with Learning Agents" title="Direct link to Integration with Learning Agents" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="adaptive-subagents">Adaptive Subagents<a href="#adaptive-subagents" class="hash-link" aria-label="Direct link to Adaptive Subagents" title="Direct link to Adaptive Subagents" translate="no">​</a></h3>
+<ul>
+<li class="">Self-tuning parameters based on experience</li>
+<li class="">Learning from interaction patterns</li>
+<li class="">Performance optimization over time</li>
+<li class="">Failure recovery improvement</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="transfer-learning">Transfer Learning<a href="#transfer-learning" class="hash-link" aria-label="Direct link to Transfer Learning" title="Direct link to Transfer Learning" translate="no">​</a></h3>
+<ul>
+<li class="">Skills and behaviors in subagents</li>
+<li class="">Cross-environment capability transfer</li>
+<li class="">Simulation to reality adaptation</li>
+<li class="">Multi-robot capability sharing</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="quality-assurance-for-subagents">Quality Assurance for Subagents<a href="#quality-assurance-for-subagents" class="hash-link" aria-label="Direct link to Quality Assurance for Subagents" title="Direct link to Quality Assurance for Subagents" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="testing-protocols">Testing Protocols<a href="#testing-protocols" class="hash-link" aria-label="Direct link to Testing Protocols" title="Direct link to Testing Protocols" translate="no">​</a></h3>
+<ul>
+<li class="">Unit testing for individual skills</li>
+<li class="">Integration testing for skill coordination</li>
+<li class="">System testing for subagent behavior</li>
+<li class="">Validation in simulation and reality</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="performance-metrics">Performance Metrics<a href="#performance-metrics" class="hash-link" aria-label="Direct link to Performance Metrics" title="Direct link to Performance Metrics" translate="no">​</a></h3>
+<ul>
+<li class="">Execution time and efficiency</li>
+<li class="">Success rate and reliability</li>
+<li class="">Resource utilization</li>
+<li class="">Safety and quality compliance</li>
+</ul>
+<hr>
+<p><strong>Next Task</strong>: Task 3.3 - Specify Tools</p></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/Physical_AI_and_Humanoid_Robotics_Book/docs/appendix/reusable-skills"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Reusable Skills Identification</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/Physical_AI_and_Humanoid_Robotics_Book/docs/appendix/tools-specification"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Tool Specification</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#overview-of-subagents" class="table-of-contents__link toc-highlight">Overview of Subagents</a></li><li><a href="#core-system-subagents" class="table-of-contents__link toc-highlight">Core System Subagents</a><ul><li><a href="#1-perception-agent" class="table-of-contents__link toc-highlight">1. Perception Agent</a></li><li><a href="#2-control-agent" class="table-of-contents__link toc-highlight">2. Control Agent</a></li><li><a href="#3-learning-agent" class="table-of-contents__link toc-highlight">3. Learning Agent</a></li></ul></li><li><a href="#navigation-and-mobility-subagents" class="table-of-contents__link toc-highlight">Navigation and Mobility Subagents</a><ul><li><a href="#4-navigation-subagent" class="table-of-contents__link toc-highlight">4. Navigation Subagent</a></li><li><a href="#5-manipulation-subagent" class="table-of-contents__link toc-highlight">5. Manipulation Subagent</a></li></ul></li><li><a href="#human-robot-interaction-subagents" class="table-of-contents__link toc-highlight">Human-Robot Interaction Subagents</a><ul><li><a href="#6-voice-command-subagent" class="table-of-contents__link toc-highlight">6. Voice Command Subagent</a></li><li><a href="#7-social-interaction-subagent" class="table-of-contents__link toc-highlight">7. Social Interaction Subagent</a></li></ul></li><li><a href="#system-management-subagents" class="table-of-contents__link toc-highlight">System Management Subagents</a><ul><li><a href="#8-simulation-coordinator-subagent" class="table-of-contents__link toc-highlight">8. Simulation Coordinator Subagent</a></li><li><a href="#9-system-diagnostics-subagent" class="table-of-contents__link toc-highlight">9. System Diagnostics Subagent</a></li><li><a href="#10-safety-management-subagent" class="table-of-contents__link toc-highlight">10. Safety Management Subagent</a></li></ul></li><li><a href="#subagent-communication-architecture" class="table-of-contents__link toc-highlight">Subagent Communication Architecture</a><ul><li><a href="#hierarchical-communication-pattern" class="table-of-contents__link toc-highlight">Hierarchical Communication Pattern</a></li><li><a href="#state-synchronization" class="table-of-contents__link toc-highlight">State Synchronization</a></li><li><a href="#resource-management" class="table-of-contents__link toc-highlight">Resource Management</a></li></ul></li><li><a href="#subagent-lifecycle-management" class="table-of-contents__link toc-highlight">Subagent Lifecycle Management</a><ul><li><a href="#initialization" class="table-of-contents__link toc-highlight">Initialization</a></li><li><a href="#execution" class="table-of-contents__link toc-highlight">Execution</a></li><li><a href="#monitoring" class="table-of-contents__link toc-highlight">Monitoring</a></li><li><a href="#shutdown" class="table-of-contents__link toc-highlight">Shutdown</a></li></ul></li><li><a href="#integration-with-learning-agents" class="table-of-contents__link toc-highlight">Integration with Learning Agents</a><ul><li><a href="#adaptive-subagents" class="table-of-contents__link toc-highlight">Adaptive Subagents</a></li><li><a href="#transfer-learning" class="table-of-contents__link toc-highlight">Transfer Learning</a></li></ul></li><li><a href="#quality-assurance-for-subagents" class="table-of-contents__link toc-highlight">Quality Assurance for Subagents</a><ul><li><a href="#testing-protocols" class="table-of-contents__link toc-highlight">Testing Protocols</a></li><li><a href="#performance-metrics" class="table-of-contents__link toc-highlight">Performance Metrics</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 Sabahat Aslam, Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>
