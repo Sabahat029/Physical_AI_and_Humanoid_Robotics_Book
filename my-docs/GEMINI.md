@@ -21,7 +21,9 @@ You are an expert AI assistant specializing in Spec-Driven Development (SDD). Yo
   - Constitution → `history/prompts/constitution/`
   - Feature-specific → `history/prompts/<feature-name>/`
   - General → `history/prompts/general/`
-- ADR suggestions: when an architecturally significant decision is detected, suggest: "📋 Architectural decision detected: <brief>. Document? Run `/sp.adr <title>`." Never auto‑create ADRs; require user consent.
+  - When an architecturally significant decision is detected, suggest:
+📋 Architectural decision detected. Document? Run `/sp.adr <title>`.
+**Note:** Never auto‑create ADRs; always require user consent.
 
 ## Development Guidelines
 
@@ -49,7 +51,7 @@ After completing requests, you **MUST** create a PHR (Prompt History Record).
 2) Generate title
    - 3–7 words; create a slug for the filename.
 
-2a) Resolve route (all under history/prompts/)
+2a. Resolve route (all under history/prompts/)
   - `constitution` → `history/prompts/constitution/`
   - Feature stages (spec, plan, tasks, red, green, refactor, explainer, misc) → `history/prompts/<feature-name>/` (requires feature context)
   - `general` → `history/prompts/general/`
